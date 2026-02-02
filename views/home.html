@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/icon.png">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <form>
+        <h1>Contact Form</h1>
+        <fieldset id="textEntry">
+            <label for="'fname" class="textEntry">First Name:
+                <span class="err" id="err-fname">First Name Required</span>
+                <input type="text" id="fanme" name="fname" placeholder="Enter First Name">
+            </label>
+            <label for="'lname" class="textEntry">Last Name:
+                <span class="err" id="err-lname">Last Name Required</span>
+                <input type="text" id="lanme" name="lname" placeholder="Enter Last Name">
+            </label>
+            <label for="'job" class="textEntry">Job Title:
+                <span class="err" id="err-job">Job Title Required</span>
+                <input type="job" id="job" name="job" placeholder="Enter Job Title">
+            </label>
+            <label for="company" class="textEntry">Company:
+                <span class="err" id="err-company">Company Required</span>
+                <input type="text" id="company" name="company" placeholder="Enter Company">
+            </label>
+            <label for="linkedin" class="textEntry">LinkedIn URL:
+                <span class="err" id="err-linkedin">LinkedIn Required</span>
+                <input type="text" id="linkedin" name="linkedin" placeholder="Enter LinkedIn URL">
+            </label>
+            <label for="email" class="textEntry">Email:
+                <span class="err" id="err-email">Email Required</span>
+                <input type="text" id="email" name="email" placeholder="Enter Email">
+            </label>
+        </fieldset>
+
+        <fieldset id="meet-section">
+            <label for="meet" class="meet-section">How did we meet?
+                <span class="err" id="err-meet">Please select option</span>
+                <select id="meet" name=meet>
+                    <option value="none">Please select</option>
+                    <option value="in-person">In-Person</option>
+                    <option value="online">Online</option>
+                    <option value="event">Event</option>
+                    <option value="other">Other</option>
+                </select>
+                
+            </label>
+            <label for="other" class="meet-section">Other (please specify)
+                <span class="err" id="err-other">Please specify</span>
+                <input type="text" id="other" name="other" placeholder="Please specify if other selected"
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

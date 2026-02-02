@@ -1,0 +1,62 @@
+body{
+    background-color: grey;
+    margin: 0 15%;
+    font-family: sans-serif;
+    font-weight: 1rem;
+}
+
+form{
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.err{
+    color: red;
+}
+
+#textEntry{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.textEntry{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#meet-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 1rem;
+    
+}
+
+.meet-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.textEntry input{
+    height: 2rem;
+    border: 1px solid grey;
+    border-radius: .5rem;
+}
+
+fieldset{
+    border: none;
+}
+
+select, #other{
+    height: 2rem;
+}
+
+
+
+
