@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/icon.png">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/script.js" defer></script>
     <title>Contact Me</title>
 </head>
 <body>
-    <form>
+    <form id="contact-form" action="#" method="get">
         <h1>Contact Form</h1>
         <fieldset id="textEntry">
             <label for="'fname" class="textEntry">First Name:
                 <span class="err" id="err-fname">First Name Required</span>
-                <input type="text" id="fanme" name="fname" placeholder="Enter First Name">
+                <input type="text" id="fname" name="fname" placeholder="Enter First Name">
             </label>
             <label for="'lname" class="textEntry">Last Name:
                 <span class="err" id="err-lname">Last Name Required</span>
-                <input type="text" id="lanme" name="lname" placeholder="Enter Last Name">
+                <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
             </label>
-            <label for="'job" class="textEntry">Job Title:
+            <label for="job" class="textEntry">Job Title:
                 <span class="err" id="err-job">Job Title Required</span>
                 <input type="job" id="job" name="job" placeholder="Enter Job Title">
             </label>
@@ -54,6 +55,26 @@
                 <input type="text" id="other" name="other" placeholder="Please specify if other selected"
             </label>
         </fieldset>
+
+        <fieldset id="message-section">
+            <label for="message">Message
+                <textarea rows="8" id="message" name="message"></textarea>
+            </label>
+        </fieldset>
+        <label for="email-list" id="email-list-section">
+            <input type="checkbox" id="list" name="email-list" value="email-list">Please add me to you mailing list
+        </label>
+        <fieldset id="send-type-section">
+            <label>Choose an email format:</label>
+            <label for="html">
+                <input type="radio" id="html" name="type" value="html">HTML
+            </label>
+            <label for="text">
+                <input type="radio" id="text" name="type" value="html">Text
+            </label>
+            <span class="err" id="err-type">Please select an email format</span>
+        </fieldset>
+        <button type="submit" id="submit-button">Submit</button>
     </form>
 </body>
 </html>
