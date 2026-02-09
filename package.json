@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/akurfurst/contact-form/issues"
   },
-  "homepage": "https://github.com/akurfurst/contact-form#readme"
+  "homepage": "https://github.com/akurfurst/contact-form#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
 }

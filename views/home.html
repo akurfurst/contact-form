@@ -12,29 +12,29 @@
     <form id="contact-form" action="#" method="get">
         <h1>Contact Form</h1>
         <fieldset id="textEntry">
-            <label for="'fname" class="textEntry">First Name:
+            <label for="fname" class="textEntry">First Name:
                 <span class="err" id="err-fname">First Name Required</span>
                 <input type="text" id="fname" name="fname" placeholder="Enter First Name">
             </label>
-            <label for="'lname" class="textEntry">Last Name:
+            <label for="lname" class="textEntry">Last Name:
                 <span class="err" id="err-lname">Last Name Required</span>
                 <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
             </label>
             <label for="job" class="textEntry">Job Title:
-                <span class="err" id="err-job">Job Title Required</span>
-                <input type="job" id="job" name="job" placeholder="Enter Job Title">
+                <!--<span class="err" id="err-job">Job Title Required</span>-->
+                <input type="text" id="job" name="job" placeholder="Enter Job Title">
             </label>
             <label for="company" class="textEntry">Company:
-                <span class="err" id="err-company">Company Required</span>
+                <!--<span class="err" id="err-company">Company Required</span>-->
                 <input type="text" id="company" name="company" placeholder="Enter Company">
             </label>
             <label for="linkedin" class="textEntry">LinkedIn URL:
-                <span class="err" id="err-linkedin">LinkedIn Required</span>
+                <span class="err" id="err-linkedin">Please enter valid LinkedIn URL</span>
                 <input type="text" id="linkedin" name="linkedin" placeholder="Enter LinkedIn URL">
             </label>
             <label for="email" class="textEntry">Email:
                 <span class="err" id="err-email">Email Required</span>
-                <input type="text" id="email" name="email" placeholder="Enter Email">
+                <input type="email" id="email" name="email" placeholder="Enter Email">
             </label>
         </fieldset>
 
@@ -52,27 +52,27 @@
             </label>
             <label for="other" class="meet-section">Other (please specify)
                 <span class="err" id="err-other">Please specify</span>
-                <input type="text" id="other" name="other" placeholder="Please specify if other selected"
+                <input type="text" id="other" name="other" placeholder="Please specify if other selected">
             </label>
         </fieldset>
 
-        <fieldset id="message-section">
+        <fieldset id="message-section" >
             <label for="message">Message
                 <textarea rows="8" id="message" name="message"></textarea>
             </label>
         </fieldset>
-        <label for="email-list" id="email-list-section">
-            <input type="checkbox" id="list" name="email-list" value="email-list">Please add me to you mailing list
+        <label for="email-list" id="email-list-section" onclick="emailList()">
+            <input type="checkbox" id="email-list" name="email-list" value="email-list" checked>Please add me to you mailing list
         </label>
         <fieldset id="send-type-section">
             <label>Choose an email format:</label>
             <label for="html">
-                <input type="radio" id="html" name="type" value="html">HTML
+                <input type="radio" id="html" name="type" value="html" checked>HTML
             </label>
             <label for="text">
                 <input type="radio" id="text" name="type" value="html">Text
             </label>
-            <span class="err" id="err-type">Please select an email format</span>
+            <!--<span class="err" id="err-type">Please select an email format</span>-->
         </fieldset>
         <button type="submit" id="submit-button">Submit</button>
     </form>
