@@ -98,6 +98,15 @@ textarea{
     border-radius: 1rem;;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 1rem;
+}
+
 
 
 

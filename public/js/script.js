@@ -1,7 +1,7 @@
-document.getElementById("contact-form").onsubmit = () =>{
+document.getElementById("contact-form").onsubmit = validate;
 
 
-
+function validate(){
     let isValid = true;
     clearErrors();
 

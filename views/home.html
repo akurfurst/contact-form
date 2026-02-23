@@ -9,7 +9,7 @@
     <title>Contact Me</title>
 </head>
 <body>
-    <form id="contact-form" action="#" method="get">
+    <form id="contact-form" action="/confirmation" method="post">
         <h1>Contact Form</h1>
         <fieldset id="textEntry">
             <label for="fname" class="textEntry">First Name:
@@ -61,8 +61,8 @@
                 <textarea rows="8" id="message" name="message"></textarea>
             </label>
         </fieldset>
-        <label for="email-list" id="email-list-section" onclick="emailList()">
-            <input type="checkbox" id="email-list" name="email-list" value="email-list" checked>Please add me to you mailing list
+        <label for="email-list" id="email-list-section">
+            <input type="checkbox" id="email-list" name="emailList" value="emailList" checked onchange="emailList()">Please add me to you mailing list
         </label>
         <fieldset id="send-type-section">
             <label>Choose an email format:</label>
@@ -76,5 +76,8 @@
         </fieldset>
         <button type="submit" id="submit-button">Submit</button>
     </form>
+    <footer>
+        <a href="https://github.com/akurfurst/contact-form" target="_blank">Github Repository: https://github.com/akurfurst/contact-form</a>
+    </footer>
 </body>
 </html>
