@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const PORT = 3000;
+const PORT = 3003;
 const contacts = [];
 
 app.use(express.static('public'));
